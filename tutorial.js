@@ -14,7 +14,7 @@ const doYouWannaPlay = readline.question('Do you want to play? ')
 if(doYouWannaPlay.toLowerCase() === "yes"){
   console.log('Lets do it!!')
 }
-else if (doYouWannaPlay.toLocaleLowerCase() === 'no'){
+else if (doYouWannaPlay.toLowerCase() === 'no'){
   console.log('You missed your chance :\'(')
   return
 }
