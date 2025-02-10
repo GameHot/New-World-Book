@@ -1,6 +1,17 @@
 #include <stdio.h>
+#define MAX_WEIGHT 500
 
-int choice(){
+struct Player{ //
+     int ammo;
+     int food;
+     int water;
+     int totalWeight;
+};
+
+struct Player player{0, 0, 0, 0};
+
+
+int choice(){ //core mechanism: Asks for yes or no
     char ans;
     scanf(" %c", &ans);
 
@@ -23,9 +34,9 @@ int start_game() {
     if(choice == 1)
            printf("Let's do it! \n");
     if(choice == 2)
-           printf("I dont understand that language\n");
-
+           printf("I dont understand that language, exiting game\n");//edit to loop until you valid input
     return choice;
 }
      
-int main(){}
+int main(){
+}
