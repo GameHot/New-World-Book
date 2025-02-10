@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAX_WEIGHT 500
 
-struct Player{
+struct Player{ //
      int ammo;
      int food;
      int water;
