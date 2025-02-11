@@ -8,15 +8,15 @@ struct Player{ //
      int totalWeight;
 };
 
-struct Player player{0, 0, 0, 0};
+String john = new String("hello
 
+struct Player player{0, 0, 0, 0};
 
 int choice(){ //core mechanism: Asks for yes or no
     char ans;
     scanf(" %c", &ans);
-
     switch(ans) {
-        case 'y':
+        case 'Y':
         case 'Y':
             return 1;
         case 'n':
@@ -37,6 +37,16 @@ int start_game() {
            printf("I dont understand that language, exiting game\n");//edit to loop until you valid input
     return choice;
 }
-     
+
+ int sailor(){                                                                                                                                                                                                                23
+    printf("You are a sailor set out to explore the New World\n" );
+ 
+         printf("You have heard of many treachores fears that have taken the lives of many other sailors\n");
+         printf("and other pirates");
+      printf(" Do you wish to take this journey? Y/n\n");
+
+      int c = choice();
+      return choice;
+     }
 int main(){
 }
