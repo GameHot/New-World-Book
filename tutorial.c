@@ -1,14 +1,14 @@
 #include <stdio.h>
 #define MAX_WEIGHT 500
 
-struct Player{ //
+typedef struct Player{ 
      int ammo;
      int food;
      int water;
      int totalWeight;
-};
+}Player;
 
-struct Player player{0, 0, 0, 0};
+ Player player = {0, 0, 0, 0};
 
 
 int choice(){ //core mechanism: Asks for yes or no
@@ -28,14 +28,14 @@ int choice(){ //core mechanism: Asks for yes or no
 
 int start_game() {
     printf("Do you want to play? (y/n): \n");
-    int choice = choice();
-    if(choice == 0)
+    int choose = choice();
+    if(choose == 0)
            printf("You missed your chance \n");
-    if(choice == 1)
+    if(choose == 1)
            printf("Let's do it! \n");
-    if(choice == 2)
+    if(choose == 2)
            printf("I dont understand that language, exiting game\n");//edit to loop until you valid input
-    return choice;
+    return choose;
 }
      
 int main(){
